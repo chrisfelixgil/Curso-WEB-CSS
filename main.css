@@ -58,3 +58,7 @@ body {
 .section-uno p {
   color: var(--primary-color);
 }
+
+.cambiar-estilo {
+  margin-top: 10px;
+}
