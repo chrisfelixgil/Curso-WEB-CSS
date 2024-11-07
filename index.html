@@ -1,21 +1,39 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Primer ejercicio CSS</title>
-    <link rel="stylesheet" href="main.css" type="text/css">
-</head>
-<body>
-    <div class="caja-principal">
-        <div class="cabecera">Soy cabecera</div>
-        <div class="contenido-caja">Soy contenido dentro de la caja!, estoy practicando mis habilidades con CSS y repasando mis conocimientos sobre la teoría de la caja</div>
-        <div class="footer">
-            <button class="btn-aceptar">Aceptar</button>
-            <button class="btn-cancelar">Cancelar</button>
-        </div>
+    <link rel="stylesheet" href="main.css" type="text/css" />
+  </head>
+  <body>
+    <!-- MENU BASICO -->
 
+    <!-- Este contenedor tiene el tamaño por defecto de la web -->
 
-    </div>
-</body>
+    <main class="contenedor-padre">
+      <!-- MENU -->
+      <header class="header-web">
+        <nav>
+          <ul class="ul-padre">
+            <a href=""><li>Home</li></a>
+            <a href=""><li>Country</li></a>
+            <a href=""><li>People</li></a>
+          </ul>
+        </nav>
+      </header>
+
+      <!-- SECTIONS -->
+
+      <section class="section-uno">
+        <h1 class="section-uno_encabezado">Yo, I'm Chris Castle! 🏰</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum
+          minima molestias perferendis quibusdam dolores incidunt ipsam quasi
+          maiores non. Odio doloremque doloribus commodi, ullam hic soluta totam
+          necessitatibus quam voluptates.
+        </p>
+      </section>
+    </main>
+  </body>
 </html>

@@ -1,51 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+
+:root {
+  --primary-color: #f1f1f1;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 body {
-    background-color: grey;
+  background: #161616;
+  width: 100%;
+  height: 100vh;
+  font-family: "IBM Plex Mono", serif;
 }
 
-.caja-principal {
-    background-color: aliceblue;
-    border-style: solid;
-    border-width: 1px;
-    border-radius: 2px;
-    border-top: solid 0px;
+.contenedor-padre {
+  margin: 0 auto;
+  max-width: 600px;
 }
 
-.cabecera {
-    padding: 10px;
-    border-style: solid;
-    border-width: 1px;
-    border-radius: 2px;
-    border-top: solid 0px;
-    
+/* MENU */
+
+.header-web {
+  padding: 20px;
+  border-bottom: 1px solid #fff;
 }
 
-.contenido-caja {
-    padding: 10px;
-    border-style: solid;
-    border-width: 1px;
-    border-radius: 2px;
-    border-top: solid 0px;
-    
+.header-web .ul-padre {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
 }
 
-.footer {
-    padding: 10px;
-    border-style: solid;
-    border-width: 1px;
-    border-radius: 2px;
-    border-top: solid 0px;
+.header-web .ul-padre a {
+  text-decoration: none;
+  color: #fff;
 }
 
-.btn-aceptar {
-    padding: 4px;
-    background-color: green;
-    color: white;
-    border: 8px;
+.header-web .ul-padre li {
+  list-style: none;
 }
 
-.btn-cancelar {
-    padding: 4px;
-    background-color: grey;
-    color: white;
-    border: 8px;
+/* SECTIONS */
+
+.section-uno {
+  margin-top: 20px;
+}
+
+.section-uno .section-uno_encabezado {
+  color: var(--primary-color);
+  margin-bottom: 10px;
+}
+
+.section-uno p {
+  color: var(--primary-color);
 }
