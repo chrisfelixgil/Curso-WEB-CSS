@@ -16,3 +16,12 @@ function CambiarStilo()
 };
 
 boton.addEventListener("click", CambiarStilo);
+
+//Consumo satisfactorio de API
+fetch("https://localhost:7137/Pais/All-pais")
+    .then(res => res.json())
+    .then(Response => console.log(Response))
+
+
+
+    
