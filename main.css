@@ -62,3 +62,26 @@ body {
 .cambiar-estilo {
   margin-top: 10px;
 }
+
+table {
+  width: 100%;
+  background-color: #f1f1f1;
+  border-collapse: collapse;
+}
+
+tr:nth-child(even) {
+  background-color: antiquewhite;
+  padding: 8px;
+}
+
+td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+table th {
+  background-color: #4CAF50;
+  color: #f1f1f1;
+  text-align: left;
+  padding: 8px 12px;
+}
