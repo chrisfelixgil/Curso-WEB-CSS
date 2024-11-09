@@ -85,3 +85,7 @@ table th {
   text-align: left;
   padding: 8px 12px;
 }
+
+.hidden-input {
+  display: none;
+}

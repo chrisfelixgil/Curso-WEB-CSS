@@ -38,7 +38,20 @@
         <br>
         <p class="parrafo-api"></p>
         <br>
-        <table>
+        <form class="form">
+          <input name="id" type="number" placeholder="id" value="0" class="hidden-input">
+          <input name="nombre" type="text" placeholder="nombre">
+          <input name="correo" type="text" placeholder="correo">
+          <input name="clave" type="password" placeholder="clave">
+          <input name="estatus" type="text" placeholder="activo/desactivado">
+          <button type="submit">Enviar</button>
+          <p class="mensaje-post"></p>
+        </form>
+
+
+
+        <br>
+        <table id="tabla">
           <thead>
             <tr>
               <th>Nombre</th>

@@ -82,3 +82,36 @@ const mostrarDatos = (usuario) => {
     HTMLRespuesta.innerHTML = plantilla;
 
   */
+
+//Obtener datos de formulario
+
+const elementoformulario = document.querySelector(".form");
+
+elementoformulario.addEventListener("submit", (event) => {
+  event.preventDefault(); //Esto evita que el navegador recargue la pagina raro
+
+  const datosform = new FormData(elementoformulario);
+  const datos = Object.fromEntries(datosform);
+  console.log(datos);
+
+  fetch("https://localhost:7137/Usuario/New-usuario", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(datos),
+  })
+    .then((res) => {
+      if (!res.ok) {
+        throw new Error(`HTTP error! Status: ${res.status}`);
+      }
+      return res.text();
+    })
+    .then((TextoRespuesta) => {
+      alert(TextoRespuesta);
+      location.reload(); //recarga la pagina para que se llene la tabla
+    })
+    .catch((error) => {
+      console.error("Error al enviar los datos a la API: ", error);
+    });
+});
